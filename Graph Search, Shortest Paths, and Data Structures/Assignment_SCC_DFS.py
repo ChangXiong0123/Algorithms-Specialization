@@ -1,13 +1,9 @@
 # kosaraju's Two-Pass Algorithm
-
-import resource
 from collections import defaultdict
 import sys
+import threading
 import os
 os.chdir('Graph Search, Shortest Paths, and Data Structures')
-resource.setrlimit(resource.RLIMIT_STACK,
-                   (resource.RLIM_INFINITY, resource.RLIM_INFINITY))
-sys.setrecursionlimit(2 ** 17)
 
 
 class Graph:
@@ -54,7 +50,7 @@ class Graph:
                 self._DFSuntil_scc(neigbours, scc)
 
     def find_finish_time(self):
-        for i in self.graph_rev:
+        for i in list(self.graph_rev.keys()):
             if self.visited_rev[i] is False:
                 self._DFSuntil_rev(i)
 
@@ -74,6 +70,16 @@ class Graph:
 
 
 if __name__ == "__main__":
-    g = Graph()
-    scc = g.get_scc('SCC.txt')
-    print(scc)
+    threading.stack_size(67108864)
+    sys.setrecursionlimit(2 ** 20)
+
+    def extract_largest_scc():
+        g = Graph()
+        SCC_lst = g.get_scc('SCC.txt')
+        size = [len(x) for x in SCC_lst]
+        size.sort()
+        print(size[-5:])
+        return size[-5:]
+
+    thread = threading.Thread(target=extract_largest_scc)
+    thread.start()
