@@ -1,10 +1,5 @@
 with open('IntegerArray.txt') as f:
     lines = [int(x) for x in f]
-# print(lines)
-# # print(len(lines))
-# # print(type(len(lines)))
-# # print(type(len(lines)/2))
-# # print(lines[:int(len(lines)/2)])
 
 def merge_sort(input_list):
     n = len(input_list)
