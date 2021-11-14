@@ -1,7 +1,7 @@
 import min_heap
 from collections import defaultdict
 import os
-os.chdir('Graph Search, Shortest Paths, and Data Structures')
+os.chdir('Graph Search, Shortest Paths, and Data Structures/Dijkstra')
 
 
 class Graph(min_heap.MinHeap):

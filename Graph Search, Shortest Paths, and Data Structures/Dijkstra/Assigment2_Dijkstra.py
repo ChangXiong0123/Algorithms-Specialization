@@ -1,7 +1,7 @@
 # Simple Dijkstra without heap O(mn)
 from collections import defaultdict
 import os
-os.chdir('Graph Search, Shortest Paths, and Data Structures')
+os.chdir('Graph Search, Shortest Paths, and Data Structures/Dijkstra')
 
 graph = defaultdict(list)
 with open('dijkstraData.txt') as f:

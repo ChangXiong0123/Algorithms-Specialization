@@ -2,7 +2,7 @@
 # function by multiplying them with -1 ---> turn it into Max heap
 from heapq import heappop, heappush, heapify, heappushpop
 import os
-os.chdir('Graph Search, Shortest Paths, and Data Structures')
+os.chdir('Graph Search, Shortest Paths, and Data Structures/Heap')
 
 
 class maintain_med:

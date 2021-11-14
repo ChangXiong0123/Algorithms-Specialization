@@ -6,7 +6,7 @@ from collections import defaultdict
 import sys
 import threading
 import os
-os.chdir('Graph Search, Shortest Paths, and Data Structures')
+os.chdir('Graph Search, Shortest Paths, and Data Structures/BFS/DFS')
 
 
 class Graph:
