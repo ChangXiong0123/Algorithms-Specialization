@@ -1,4 +1,4 @@
-### Coursera Stanford Algo Sepcilization
+### Algo Sepcialization
 
 * [Divide and Conquer, Sorting and Searching, and Randomized Algorithms](https://https://github.com/ChangXiong0123/Algorithms-Specialization/tree/master/Divide%20and%20Conquer%2C%20Sorting%20and%20Searching%2C%20and%20Randomized%20Algorithms)
 
