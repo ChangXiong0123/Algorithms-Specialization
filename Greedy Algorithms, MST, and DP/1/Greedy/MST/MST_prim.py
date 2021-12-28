@@ -3,9 +3,6 @@ from collections import defaultdict
 
 
 def read_graph(file):
-    """read the file, return the graph
-    jobs are lists inside of a list with format of ['weight','length']
-    """
     graph = defaultdict(list)
     with open(file) as file:
         for position, lines in enumerate(file):
